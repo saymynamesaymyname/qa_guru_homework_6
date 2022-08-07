@@ -15,7 +15,7 @@ public class GithubCheckPlanTest {
     void testComparePlansPage() {
         open("https://github.com/");
 
-        $(byText("Pricing")).hover();
+        $(".HeaderMenu").$(byText("Pricing")).hover();
         $(byLinkText("Plans")).click();
         $(".application-main").shouldHave(text("Choose the plan that’s right for you."));
     }
