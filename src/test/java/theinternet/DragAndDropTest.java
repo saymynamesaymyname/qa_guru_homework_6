@@ -1,12 +1,5 @@
 package theinternet;
-
-import com.codeborne.selenide.ElementsCollection;
-import com.codeborne.selenide.Selenide;
-import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.Test;
-
-import java.util.Collection;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.*;
 
