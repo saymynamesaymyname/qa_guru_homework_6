@@ -15,8 +15,7 @@ public class DragAndDropTest {
     void  checkDnDOfElements() {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-b").dragAndDropTo("#column-a");
-        ElementsCollection collectionOfColumns = $$("#columns div.column");
-        collectionOfColumns.get(0).shouldHave(text("B"));
-        collectionOfColumns.get(1).shouldHave(text("A"));
+        $("#column-a").shouldHave(text("B"));
+        $("#column-b").shouldHave(text("A"));
     }
 }
